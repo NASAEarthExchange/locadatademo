@@ -45,10 +45,10 @@ Demonstration Steps and discussion
 
   ::
 
-    $ git clone https://github.com/HyperplaneOrg/locaaccessdemo.git
+    $ git clone https://github.com/NASAEarthExchange/locadatademo.git
     $ cd locaaccessdemo
 
-  Or, you can directly download the `zip file here <https://github.com/HyperplaneOrg/locaaccessdemo/archive/master.zip>`_ .
+  Or, you can directly download the `zip file here <https://github.com/NASAEarthExchange/locadatademo/archive/master.zip>`_ .
 
 * Open the file *locaS3find.py* in your favorite text editor and take a look.
 
