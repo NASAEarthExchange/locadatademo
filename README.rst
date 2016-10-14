@@ -123,9 +123,9 @@ References:
 .. [#] https://aws.amazon.com/nasa/nex/
 .. [#] https://www.python.org
 .. [#] https://www.r-project.org
-.. [#] https://en.wikipedia.org/wiki/Terminal_(macOS)
+.. [#] `https://en.wikipedia.org/wiki/Terminal_(macOS)`
 .. [#] https://en.wikipedia.org/wiki/Unix_shell
-.. [#] https://en.wikipedia.org/wiki/PowerShell     (windows shell equivalent) 
+.. [#] https://en.wikipedia.org/wiki/PowerShell 
 .. [#] http://docs.python-requests.org/en/master/
 .. [#] http://matplotlib.org
 .. [#] http://www.numpy.org
