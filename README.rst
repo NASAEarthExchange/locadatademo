@@ -65,7 +65,7 @@ Demonstration Steps and discussion
     $ python ./locaS3find.py
 
 * If you wish take a look at the simple `json based index file <http://nasanex.s3.amazonaws.com/LOCA/loca-s3-files.json>`_ that 
-  was posted in the S3 bucket that enabled the basic select routine. Download it and open it in your favorite text editor, e.g.
+  was posted in the S3 bucket that enabled the basic select routine download it and open it in your favorite text editor, e.g.
   
   ::
 
@@ -99,7 +99,7 @@ Demonstration Steps and discussion
   This script will download one data object, a netcdf file [#]_, from the S3 object store (if it hasn't already been downloaded), it will pick a 
   time step and extract the full spatial domain at that step and plot the full map. Next, the script will extract the data for a point, our point 
   is given at the top of the script, which is the latitude and longitude of the NIST Net-Zero energy building [#]_ experiment. You can take a look
-  at the building, our point of interest, via `google maps <https://goo.gl/maps/PfHsAJH8iZx>`_ if your interested. Run the python script:
+  at the building, our point of interest, via this `google maps link <https://goo.gl/maps/PfHsAJH8iZx>`_ if your interested. Run the python script:
   
   ::
 
