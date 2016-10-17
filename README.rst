@@ -1,4 +1,4 @@
-Basic LOCA Data Access Demonstration
+LOCA Data Access Demonstration
 ====================================
 
 Introduction
