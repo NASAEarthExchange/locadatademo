@@ -72,7 +72,7 @@ Demonstration Steps and discussion
     $ vim loca-s3-files.json
 
   As you can see this is very basic but effective structure in that we can retrieve a listing of files, or object, by model name, representative 
-  pathway (often said rcp), variable name like maximum temperature or minimum temperature, over a valid time span, e.g. year 2006 to 2100. We can 
+  concentration pathway (often said rcp), variable name like maximum temperature or minimum temperature, over a valid time span, e.g. year 2006 to 2100. We can 
   also the prepend the historical runs, 1950 to 2100 to our list. Our trivial select routine in *locaS3find.py* simplifies the process of getting 
   all links based on our parameters through a simple routine without the need of sql or nosql database servers or web services. 
 
