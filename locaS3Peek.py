@@ -58,13 +58,25 @@ if __name__ == '__main__':
     remote = 'http://nasanex.s3.amazonaws.com/LOCA/CESM1-BGC/16th/rcp85/r1i1p1/tasmax/tasmax_day_CESM1-BGC_rcp85_r1i1p1_20500101-20501231.LOCA_2016-04-02.16th.nc'
     localfnm = os.path.split(remote)[1]
 
+    # download the file in chunks, if needed. Note: the file is about 332M
     if not os.path.exists(localfnm):
-        localfd = open(localfnm, "w")
-        r = requests.get(remote)
-        localfd.write(r.content)
-        localfd.close()
+        wheel, chnksz = ['|', '/', '-', '\\'], 262144
+        try:
+            localfd = open(localfnm, "wb")
+            r = requests.get(remote, stream=True, timeout=1)
+            for i, chunk in enumerate(r.iter_content(chunk_size=chnksz)): 
+               if chunk: 
+                  localfd.write(chunk)
+                  sys.stdout.write('\r['+wheel[i%4]+"] "+str((i+1)*chnksz)+' bytes')
+                  sys.stdout.flush()
+            localfd.close()
+            sys.stdout.write('\n')
+        except (Exception, KeyboardInterrupt), e:
+            if os.path.exists(localfnm): os.unlink(localfnm)
+            sys.stderr.write("download failed : "+str(e)+"\n")
+            sys.exit(1)
 
-    # open the local file
+    # now open the local file
     ncfd = netCDF4.Dataset(localfnm)
 
     # print some metadata
