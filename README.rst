@@ -15,7 +15,7 @@ easily gain access to the full data-set and so some analytics tasks.
 For these examples, we will use two different programming languages, python [#]_ and R [#]_. More information on 
 these can be found by following the links listed below. 
 
-See the short `YouTube <https://www.youtube.com/watch?v=sZrqMLM4LRI>`_ video for the full accompany presentation.
+See the short `YouTube <https://www.youtube.com/watch?v=sZrqMLM4LRI> video`_ for the full accompany presentation.
 
 
 Demonstration Dependencies and Assumptions
